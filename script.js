@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         snake.unshift(head);
         
         // 如果没有吃到食物，移除尾部；否则保留尾部，蛇会变长
-        if (head.x !== food.x && head.y !== food.y) {
+        if (head.x !== food.x || head.y !== food.y) {
             snake.pop();
         }
     }
